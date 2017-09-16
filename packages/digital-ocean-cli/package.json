@@ -1,0 +1,26 @@
+{
+  "name": "digital-ocean-cli",
+  "version": "0.0.0",
+  "description": "CLI for Digital Ocean.",
+  "license": "MIT",
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/digital-ocean",
+  "repository": "https://github.com/negativetwelve/digital-ocean/tree/master/packages/digital-ocean-cli",
+  "keywords": [
+    "cli",
+    "digital-ocean",
+    "infrastructure",
+    "sdk"
+  ],
+  "main": "build/digital-ocean-cli",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}
