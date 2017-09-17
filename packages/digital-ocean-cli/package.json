@@ -12,10 +12,16 @@
     "infrastructure",
     "sdk"
   ],
-  "main": "build/digital-ocean-cli",
   "files": [
     "build"
   ],
+  "bin": {
+    "docli": "build/scripts/docli.js"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "digital-ocean": "^0.1.0"
+  },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
     "clean": "rimraf build",
