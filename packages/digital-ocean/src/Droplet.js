@@ -13,7 +13,10 @@ class Droplet {
       params,
     });
 
-    return new this(response.droplet);
+    const json = await response.json();
+    const {droplet} = json;
+
+    return new this(droplet);
   }
 
   constructor(params) {

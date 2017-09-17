@@ -13,7 +13,7 @@
     "sdk",
     "server"
   ],
-  "main": "build/index",
+  "main": "build/DigitalOcean",
   "files": [
     "build"
   ],
