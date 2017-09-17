@@ -20,5 +20,8 @@
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
     "clean": "rimraf build",
     "prepublishOnly": "yarn run clean && yarn run build"
+  },
+  "dependencies": {
+    "commander": "^2.11.0"
   }
 }
