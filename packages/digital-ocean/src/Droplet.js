@@ -19,8 +19,19 @@ class Droplet {
     return new this(droplet);
   }
 
-  constructor(params) {
-    this.params = params;
+  // --------------------------------------------------
+  // Properties
+  // --------------------------------------------------
+  constructor(props) {
+    this.props = props;
+  }
+
+  get id() {
+    return this.props.id;
+  }
+
+  get name() {
+    return this.props.name;
   }
 
   // --------------------------------------------------
