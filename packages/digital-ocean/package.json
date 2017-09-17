@@ -11,7 +11,7 @@
     "infrastructure",
     "sdk"
   ],
-  "main": "build/digital-ocean",
+  "main": "build/index",
   "files": [
     "build"
   ],
