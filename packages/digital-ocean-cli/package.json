@@ -16,7 +16,7 @@
     "build"
   ],
   "bin": {
-    "docli": "src/scripts/docli.js"
+    "docli": "build/scripts/docli.js"
   },
   "dependencies": {
     "commander": "^2.11.0",

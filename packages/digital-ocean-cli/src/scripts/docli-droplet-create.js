@@ -44,9 +44,7 @@ const program = new commander.Command('docli droplet create')
 guard(async () => {
   try {
     // Parse args from the CLI.
-    const {token, region, size, image, sshKeyId} = program.opts();
-
-    console.log(program.opts());
+    const {token, region, size, image, ssh: sshKeyId} = program.opts();
 
     // Create instance of the DigitalOcean client.
     const client = new DigitalOcean({token});
