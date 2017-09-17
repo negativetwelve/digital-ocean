@@ -9,7 +9,7 @@ class Droplet {
   static async create({client, ...params}) {
     const response = await client.request({
       method: 'POST',
-      url: '/v2/droplets',
+      path: '/v2/droplets',
       params,
     });
 

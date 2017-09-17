@@ -8,8 +8,10 @@
   "repository": "https://github.com/negativetwelve/digital-ocean/tree/master/packages/digital-ocean",
   "keywords": [
     "digital-ocean",
+    "droplet",
     "infrastructure",
-    "sdk"
+    "sdk",
+    "server"
   ],
   "main": "build/index",
   "files": [

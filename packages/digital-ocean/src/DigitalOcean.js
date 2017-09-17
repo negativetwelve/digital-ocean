@@ -15,7 +15,7 @@ class DigitalOcean {
   // --------------------------------------------------
   constructor({token}) {
     this.token = token;
-    this.api = new API({url: 'https://api.digitalocean.com'});
+    this.api = new API({baseUrl: 'https://api.digitalocean.com'});
   }
 
   get headers() {
@@ -28,8 +28,8 @@ class DigitalOcean {
   // --------------------------------------------------
   // Request
   // --------------------------------------------------
-  async request({method, url, params}) {
-    return this.api.request({method, url, params, headers: this.headers});
+  async request({method, path, params}) {
+    return this.api.request({method, path, params, headers: this.headers});
   }
 
   // --------------------------------------------------
