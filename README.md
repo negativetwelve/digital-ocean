@@ -12,10 +12,37 @@ Node SDK and CLI tool for Digital Ocean.
 
 ## Getting Started
 
+Install the global CLI via:
+
+```shell
+yarn global add digital-ocean-cli
+```
+
+This will make the `docli` tool available on your machine.
+
+## SDK
+
 Install `digital-ocean` using `yarn`:
 
 ```shell
 yarn add digital-ocean
+```
+
+Use it within code:
+
+```javascript
+import DigitalOcean from 'digital-ocean';
+
+const run = async () => {
+  const client = new DigitalOcean({token: '<YOUR API TOKEN>'});
+  const droplet = await client.createDroplet({
+    // Options are passed here.
+  });
+
+  console.log(droplet);
+};
+
+run();
 ```
 
 ## Packages
