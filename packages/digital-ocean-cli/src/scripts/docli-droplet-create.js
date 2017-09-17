@@ -22,7 +22,7 @@ const program = new commander.Command('docli droplet create')
   .option(
     '--region [region]',
     'Specify the region for the droplet.',
-    'sf1',
+    'sfo1',
   )
   .option(
     '--size [size]',
