@@ -2,14 +2,17 @@
 import DigitalOcean from 'digital-ocean';
 
 
-const run = async ({TOKEN: token}) => {
+/**
+ * Example for how to create a droplet using the SDK.
+ */
+const run = async ({TOKEN: token, SSH_KEY_ID: sshKeyId}) => {
   const client = new DigitalOcean({token});
   const droplet = await client.createDroplet({
     name: 'my-droplet',
     region: 'nyc3',
     size: '512mb',
     image: 'ubuntu-14-04-x64',
-    sshKeys: ['12345'],
+    sshKeys: [sshKeyId],
   });
 
   console.log(droplet);
