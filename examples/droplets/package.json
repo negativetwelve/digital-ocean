@@ -1,0 +1,8 @@
+{
+  "name": "example-droplets",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "digital-ocean": "^0.0.1"
+  }
+}

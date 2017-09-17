@@ -8,13 +8,18 @@
   "repository": "https://github.com/negativetwelve/digital-ocean/tree/master/packages/digital-ocean",
   "keywords": [
     "digital-ocean",
+    "droplet",
     "infrastructure",
-    "sdk"
+    "sdk",
+    "server"
   ],
-  "main": "build/digital-ocean",
+  "main": "build/DigitalOcean",
   "files": [
     "build"
   ],
+  "dependencies": {
+    "handy-api": "^1.4.0"
+  },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
     "clean": "rimraf build",
