@@ -1,6 +1,6 @@
 {
   "name": "digital-ocean-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI for Digital Ocean.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "commander": "^2.11.0",
-    "digital-ocean": "^0.1.0"
+    "digital-ocean": "^0.2.0"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
