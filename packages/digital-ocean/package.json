@@ -1,6 +1,6 @@
 {
   "name": "digital-ocean",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Node SDK for Digital Ocean.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
