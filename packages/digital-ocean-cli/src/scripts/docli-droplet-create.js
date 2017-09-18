@@ -2,6 +2,7 @@
 
 // Libraries
 import commander from 'commander';
+import chalk from 'chalk';
 import DigitalOcean from 'digital-ocean';
 
 // CLI
@@ -58,11 +59,13 @@ guard(async () => {
       sshKeys: [sshKeyId],
     });
 
-    console.log([
-      'Droplet successfully created!',
-      `  id: ${droplet.id}`,
-      `  name: ${droplet.name}`,
-    ].join('\n'));
+    console.log(
+      chalk.green([
+        'Droplet successfully created!',
+        `  id: ${droplet.id}`,
+        `  name: ${droplet.name}`,
+      ].join('\n')),
+    );
   } catch (error) {
     console.error(`An error has occurred: ${error.message}`);
   }

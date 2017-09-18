@@ -19,6 +19,7 @@
     "docli": "build/scripts/docli.js"
   },
   "dependencies": {
+    "chalk": "^2.1.0",
     "commander": "^2.11.0",
     "digital-ocean": "^0.2.1"
   },
