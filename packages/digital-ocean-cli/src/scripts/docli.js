@@ -2,6 +2,7 @@
 
 // Libraries
 import commander from 'commander';
+import chalk from 'chalk';
 
 // CLI
 import Package from '../../package.json';
@@ -22,11 +23,7 @@ const run = (args) => {
   const input = args[2];
 
   if (input && !input.startsWith('-') && !names.includes(input)) {
-    console.error(
-      `'docli ${input}' is not a valid command. Please see ` +
-      `the list of commands below:`,
-    );
-    program.help();
+    console.error(chalk.red(`'docli ${input}' is not a valid command.`));
     process.exit(1);
   } else {
     program.parse(args);
